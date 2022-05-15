@@ -1,0 +1,104 @@
+.slider {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.slider section {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.white-arrow-right {
+  position: absolute;
+  padding: 1rem; /* Arrow size */
+  box-shadow: 1px -1px 0 1px rgb(255, 255, 255) inset;
+  -webkit-box-shadow: 2px -2px rgb(255, 255, 255) inset;
+  border: solid transparent;
+  border-width: 0 0 2rem 2rem;
+  transition: 0.2s;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 0.5%;
+}
+
+.white-arrow-right:hover {
+  box-shadow: 2px -2px 0 2px rgb(255, 255, 255) inset;
+  -webkit-box-shadow: 4px -4px rgb(255, 255, 255) inset;
+}
+
+.black-arrow-right {
+    position: absolute;
+    padding: 1rem; /* Arrow size */
+    box-shadow: 1px -1px 0 1px rgb(0, 0, 0) inset;
+    -webkit-box-shadow: 2px -2px rgb(0, 0, 0) inset;
+    border: solid transparent;
+    border-width: 0 0 2rem 2rem;
+    transition: 0.2s;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 0.5%;
+  }
+  
+  .black-arrow-right:hover {
+    box-shadow: 2px -2px 0 2px rgb(0, 0, 0) inset;
+    -webkit-box-shadow: 4px -4px rgb(0, 0, 0) inset;
+  }
+  
+
+
+.white-arrow-left {
+  position: absolute;
+  padding: 1rem; /* Arrow size */
+  box-shadow: 1px -1px 0 1px rgb(255, 255, 255) inset;
+  -webkit-box-shadow: 2px -2px rgb(255, 255, 255) inset;
+  border: solid transparent;
+  border-width: 0 0 2rem 2rem;
+  transition: 0.2s;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 0.5%;
+}
+
+.white-arrow-left:hover {
+  box-shadow: 2px -2px 0 2px rgb(255, 255, 255) inset;
+  -webkit-box-shadow: 4px -4px rgb(255, 255, 255) inset;
+}
+
+.black-arrow-left {
+    position: absolute;
+    padding: 1rem; /* Arrow size */
+    box-shadow: 1px -1px 0 1px rgb(0, 0, 0) inset;
+    -webkit-box-shadow: 2px -2px rgb(0, 0, 0) inset;
+    border: solid transparent;
+    border-width: 0 0 2rem 2rem;
+    transition: 0.2s;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 0.5%;
+  }
+  
+  .black-arrow-left:hover {
+    box-shadow: 2px -2px 0 2px rgb(0, 0, 0) inset;
+    -webkit-box-shadow: 4px -4px rgb(0, 0, 0) inset;
+  }
+  
+
+
+.black-arrow-right {
+  transform: rotate(225deg);
+}
+
+.black-arrow-left {
+  transform: rotate(45deg);
+}
+
+
+.white-arrow-right {
+    transform: rotate(225deg);
+  }
+  
+  .white-arrow-left {
+    transform: rotate(45deg);
+  }

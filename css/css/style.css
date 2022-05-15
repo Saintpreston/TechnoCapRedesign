@@ -1,0 +1,277 @@
+.slider {
+  width: 100%;
+  height: 100%;
+}
+
+.slider section {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.white-arrow-right {
+  position: absolute;
+  padding: 1rem;
+  /* Arrow size */
+  box-shadow: 1px -1px 0 1px white inset;
+  -webkit-box-shadow: 2px -2px white inset;
+  border: solid transparent;
+  border-width: 0 0 2rem 2rem;
+  transition: 0.2s;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 0.5%;
+}
+
+.white-arrow-right:hover {
+  box-shadow: 2px -2px 0 2px white inset;
+  -webkit-box-shadow: 4px -4px white inset;
+}
+
+.black-arrow-right {
+  position: absolute;
+  padding: 1rem;
+  /* Arrow size */
+  box-shadow: 1px -1px 0 1px black inset;
+  -webkit-box-shadow: 2px -2px black inset;
+  border: solid transparent;
+  border-width: 0 0 2rem 2rem;
+  transition: 0.2s;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 0.5%;
+}
+
+.black-arrow-right:hover {
+  box-shadow: 2px -2px 0 2px black inset;
+  -webkit-box-shadow: 4px -4px black inset;
+}
+
+.white-arrow-left {
+  position: absolute;
+  padding: 1rem;
+  /* Arrow size */
+  box-shadow: 1px -1px 0 1px white inset;
+  -webkit-box-shadow: 2px -2px white inset;
+  border: solid transparent;
+  border-width: 0 0 2rem 2rem;
+  transition: 0.2s;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 0.5%;
+}
+
+.white-arrow-left:hover {
+  box-shadow: 2px -2px 0 2px white inset;
+  -webkit-box-shadow: 4px -4px white inset;
+}
+
+.black-arrow-left {
+  position: absolute;
+  padding: 1rem;
+  /* Arrow size */
+  box-shadow: 1px -1px 0 1px black inset;
+  -webkit-box-shadow: 2px -2px black inset;
+  border: solid transparent;
+  border-width: 0 0 2rem 2rem;
+  transition: 0.2s;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 0.5%;
+}
+
+.black-arrow-left:hover {
+  box-shadow: 2px -2px 0 2px black inset;
+  -webkit-box-shadow: 4px -4px black inset;
+}
+
+.black-arrow-right {
+  transform: rotate(225deg);
+}
+
+.black-arrow-left {
+  transform: rotate(45deg);
+}
+
+.white-arrow-right {
+  transform: rotate(225deg);
+}
+
+.white-arrow-left {
+  transform: rotate(45deg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: .5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(155, 155, 155, 0.6);
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFE60A;
+  border-radius: 100vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 80vh;
+  overflow-x: hidden;
+}
+
+.nav {
+  min-height: 5vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: fixed;
+  align-items: center;
+  z-index: 1;
+  background-color: #FFE60A;
+}
+
+.nav a {
+  font-size: 1em;
+  font-family: "Roboto Mono", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  font-style: oblique;
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 3.3em;
+}
+
+.hero-container {
+  /*background-color: rgba(255, 255, 255, 0.85);*/
+  height: 500vh;
+  /*this needs to be bigger to allow space for the footer*/
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+  /* this needs to be on for slide effect */
+}
+
+.landing-container {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  background-color: #FFE60A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  overflow: hidden;
+}
+
+.description-box {
+  width: 40vw;
+  align-self: right;
+  color: black;
+  font-family: "Roboto Mono", sans-serif;
+  position: relative;
+  left: 20vh;
+  font-size: 0.9em;
+}
+
+.container-white {
+  width: 200vw;
+  max-width: 200vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  scroll-snap-type: both;
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+.container-white h1 {
+  width: 50%;
+  text-align: center;
+  color: black;
+}
+
+.container-white .read-more {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  transition: all 0.4s ease-in;
+  background-color: black;
+}
+
+.container-white .read-more p {
+  width: 80%;
+  font-family: "Roboto Mono", sans-serif;
+  color: black;
+}
+
+.container-black {
+  width: 200vw;
+  max-width: 200vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  scroll-snap-type: both;
+  scroll-snap-align: center;
+  overflow-x: hidden;
+}
+
+.container-black h1 {
+  scroll-snap-stop: normal;
+  scroll-snap-align: center;
+  width: 50%;
+  color: white;
+  text-align: center;
+}
+
+.container-black .read-more {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  transition: all 0.4s ease-in;
+  background-color: black;
+}
+
+.container-black .read-more p {
+  width: 80%;
+  font-family: "Roboto Mono", sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 1em;
+  font-family: "Roboto Mono", sans-serif;
+  max-width: 75%;
+}
+/*# sourceMappingURL=style.css.map */
